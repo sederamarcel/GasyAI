@@ -230,7 +230,7 @@ def main():
     total_params = model.get_num_params()
     print(f"   ✅ Modèle: {total_params:,} paramètres (~500M)")
     
-    # ⚠️ ZAVA-DEHIBE: Auto-resume raha misy checkpoint
+    # Auto-resume raha misy checkpoint
     start_epoch = 0
     if args.auto_resume:
         checkpoint_files = sorted([f for f in os.listdir('.') if f.startswith('checkpoint_epoch_')])
